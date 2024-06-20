@@ -1,0 +1,108 @@
+//## Gray and brand colors for use across Bootstrap.
+$brand-primary: #999 !default; // #337ab7
+//** Background color for `<body>`.
+$body-bg: #fff !default;
+//** Global text color on `<body>`.
+$text-color: #535353 !default;
+//** Global textual link color.
+$link-color: $text-color !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color: #ccff99 !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-open-sans : 'OpenSansRegular', Helvetica, Arial, sans-serif !default;
+$font-family-base : $font-family-open-sans !default;
+$font-size-base : 14px !default;
+$font-size-h1 : 72px !default;
+$font-size-h2 : 60px !default;
+$font-size-h3 : 50px !default;
+$font-size-h4 : 30px !default;
+$font-size-h5 : 24px !default;
+$font-size-h6 : 18px !default;
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-black: 900 !default;
+//** By default, this inherits from the `<body>`.
+$headings-font-family : 'latobold', cursive !default;
+$headings-line-height : 62px !default;
+$headings-color : #fff !default;
+$radius :0 !default;
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+$padding-base-vertical : 6px !default;
+$padding-base-horizontal : 12px !default;
+$padding-large-vertical : 10px !default;
+$padding-large-horizontal : 16px !default;
+$padding-small-vertical : 5px !default;
+$padding-small-horizontal : 10px !default;
+$padding-xs-vertical : 1px !default;
+$padding-xs-horizontal : 5px !default;
+$line-height-large : 1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small : 1.5 !default;
+$border-radius-base : 50% !default;
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+$btn-font-weight : normal !default;
+$btn-default-color : #ffffff !default;
+$btn-default-bg : #66cc66 !default;
+$btn-default-size: 14px !default;
+$btn-default-padding: 30px 42px !default;
+$btn_hover_bg: #aeaebc !default;
+$btn-primary-color : #333333 !default;
+$btn-primary-bg : transparent !default;
+$btn-primary-hover-color: #cc9933 !default;
+$btn-primary-hover-bg: transparent !default;
+$btn-secondary-color : #fff !default;
+$btn-secondary-bg : transparent !default;
+$btn-secondary-hover-color: #cc9933 !default;
+$btn-secondary-hover-bg: transparent !default;
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base : 4px !default;
+//== Forms//
+//##
+//** `<input>` background color
+$input-bg : #efefef !default;
+//** Text color for `<input>`s
+$input-color : #555 !default;
+//** `<input>` border color
+$input-border : #dedede !default;
+//** Border color for inputs on focus
+$input-border-focus : #d6d6d6 !default;
+//** Placeholder text color
+$input-color-placeholder : $input-color !default;
+//** Default `.form-control` height
+$input-height-base : 42px;
+//** `.form-group` margin
+$form-group-margin-bottom : 45px !default;
+//== Pagination
+//
+//##
+$pagination-color : #512c1d !default;
+$pagination-bg : #e8e8e8 !default;
+$pagination-hover-color : #fff !default;
+$pagination-hover-bg : #512c1d !default;
+$pagination-active-color : #fff !default;
+$pagination-active-bg : #512c1d !default;
+//== Modals
+//
+//##
+//** Background color of modal content area
+$modal-content-bg: #fff !default;
+//== Breadcrumbs
+//
+//##
+//** Breadcrumb text color
+$breadcrumb-color : #512c1d !default;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color : #512c1d !default;
+//== Section Bg-color
+//
+//##

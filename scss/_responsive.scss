@@ -1,0 +1,1557 @@
+/*///////////////////////////////////////////////////////////////////////// Responsive CSS Structure /////////////////////////////////////////////////////////////////////////*/
+
+/*---------- Small Mobile , IPhone Start ----------*/
+
+/*=== Screen Size = 240, 320, 360, 480, 568 ===*/
+
+@media (min-width: 240px) and (max-width: 568px) {
+	/* Home Page Start */
+	.video-modal .modal-content iframe {
+		height: 300px;
+	}
+	.parallax-window {
+		height: 800px;
+	}
+	/* Home Page End */
+	/* Modal Start */
+	.login-modal .modal-dialog {
+		width: auto;
+	}
+	/* Modal End */
+	/* Service Page Start */
+	.human-body-parts [class*=col-xs] {
+		width: 100%;
+	}
+	.human-body-parts .body-parts-block {
+		margin: 0 0 15px;
+	}
+	.appointment-form .form-group.date, .appointment-form .form-group.time {
+		width: 100%;
+	}
+	/* Service Page End */
+	/* Blog Page Start */
+	.blog-lists .blog-post .blog-detail a {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.blog-lists .blog-post .blog-detail {
+		padding: 30px 30px 90px;
+	}
+	.blog-lists .blog-post .blog-detail a.read-more {
+		left: 50%;
+		right: auto;
+		top: auto;
+		bottom: 0;
+		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+		-moz-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		-o-transform: translate(-50%, 0);
+	}
+	.blog-lists .blog-post .blog-image .image>img {
+		height: 250px;
+		object-fit: cover;
+		font-family: 'object-fit: cover';
+	}
+	.blog-lists .blog-post .blog-image .emp-detail .emp-block .image {
+		float: none;
+		margin: 0 0 15px;
+	}
+	.blog-lists .blog-post .blog-image .emp-detail {
+		text-align: center;
+	}
+	.blog-lists .blog-post .blog-image .emp-detail .emp-block>a {
+		display: block;
+	}
+	.blog-lists .blog-post .blog-image .emp-detail .emp-block ul li {
+		display: block;
+		padding: 5px 0 0;
+	}
+	.blog-lists .blog-post .blog-image .emp-detail .emp-block ul li:after {
+		display: none;
+	}
+	.blog-sidebar-widget .recent-posts .post-block [class*=col-] {
+		width: 100%;
+	}
+	.blog-sidebar-widget .recent-posts .post-block a.image {
+		margin: 0 0 15px;
+	}
+	/* Blog Page End */
+	/* Doctor Page Start */
+	.banner>img {
+		height: 250px;
+		object-fit: cover;
+		font-family: 'object-fit: cover';
+	}
+	.medlife-clinic-num [class*=col-] {
+		width: 100%;
+	}
+	/* Doctor Page End */
+	/* Shop Page Start */
+	.shop-products-list [class*=col-xs] {
+		min-height: auto;
+		width: 100%;
+	}
+	.shop-pg .result-sorting .left-side {
+		padding-bottom: 15px;
+	}
+	.shop-pg .result-sorting .left-side, .shop-pg .result-sorting .right-side {
+		width: 100%;
+	}
+	.selectric {
+		width: 100%;
+	}
+	.pagination>li>a, .pagination>li>span {
+		padding: 5px 10px;
+	}
+	/* Shop Page End */
+}
+@media (min-width: 569px) and (max-width: 767px) {
+	/* Home Page Start */
+	.video-modal .modal-content iframe {
+		height: 400px;
+	}
+	.parallax-window {
+		min-height: 700px;
+	}
+	/* Home Page End */
+	/* Service Page Start */
+	.human-body-parts .body-parts-block {
+		margin: 0 0 30px;
+	}
+	/* Service Page End */
+	/* Blog Page Start */
+	.blog-lists .blog-post .blog-detail a {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.blog-lists .blog-post .blog-detail {
+		padding: 30px 100px 30px 30px;
+	}
+	.blog-lists .blog-post .blog-detail a.read-more {
+		right: 20px;
+	}
+	/* Blog Page End */
+	/* Doctor Page Start */
+	.banner>img {
+		height: 350px;
+		object-fit: cover;
+		font-family: 'object-fit: cover';
+	}
+	/* Doctor Page End */
+	/* Shop Page Start */
+	.shop-products-list [class*=col-] {
+		min-height: 520px;
+	}
+	.pagination>li>a, .pagination>li>span {
+		padding: 8px 13px;
+	}
+	/* Shop Page End */
+	/* Tabing Start */
+	.nav-tabs-responsive {
+		>li {
+			display: none;
+			width: 23%;
+			>a {
+				@include ellipsis();
+				width: 100%;
+				text-align: center;
+				vertical-align: top;
+			}
+			&.active {
+				width: 54%;
+				&:first-child {
+					margin-left: 23%;
+				}
+			}
+			&.active, &.prev, &.next {
+				display: block;
+			}
+			&.prev, &.next {
+				-webkit-transform: scale(0.9);
+				transform: scale(0.9);
+			}
+			&.next>a, &.prev>a {
+				-webkit-transition: none;
+				transition: none;
+				.text {
+					display: none;
+				}
+				&:after, &:after {
+					@include icon-styles();
+				}
+			}
+			&.prev>a:after {
+				content: "\e079";
+			}
+			&.next>a:after {
+				content: "\e080";
+			}
+			&.dropdown {
+				>a>.caret {
+					display: none;
+				}
+				>a:after {
+					content: "\e114";
+				}
+				&.active>a {
+					&:after {
+						display: none;
+					}
+					>.caret {
+						display: inline-block;
+					}
+				}
+				.dropdown-menu {
+					&.pull-xs-left {
+						left: 0;
+						right: auto;
+					}
+					&.pull-xs-center {
+						right: auto;
+						left: 50%;
+						@include transform(translateX(-50%));
+					}
+					&.pull-xs-right {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+	/* Tabing End */
+}
+@media (max-width: 767px) {
+	.section-title h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	/* Header Start */
+	.header {
+		position: relative;
+		left: auto;
+		right: auto;
+		top: auto;
+	}
+	.h-top, .h-bottom {
+		background-color: #37a8ec;
+	}
+	.navbar-header {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		z-index: 99;
+	}
+	.h-bottom .navbar .navbar-brand {
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+	.h-bottom .navbar .navbar-brand img {
+		float: none;
+		margin: 0 auto;
+	}
+	.h-bottom .navbar .background {
+		left: 0;
+		width: 100%;
+	}
+	.h-bottom .cart-right {
+		/*text-align: center; width: 100%;*/
+		margin: -50px 0 0;
+		position: relative;
+		display: inline-block;
+		z-index: 999;
+	}
+	.h-bottom .cart-right .header-cart {
+		padding-left: 15px;
+	}
+	.h-top .h-left {
+		float: left;
+		display: inline-block;
+		width: 60%;
+	}
+	.h-history-policy {
+		padding-right: 15px;
+	}
+	.h-history-policy ul {
+		display: none;
+		background-color: #fff;
+		position: absolute;
+		left: auto;
+		right: 0;
+		top: 100%;
+		bottom: auto;
+		min-width: 150px;
+		z-index: 9999;
+	}
+	.h-history-policy ul.open {
+		display: block;
+	}
+	.h-history-policy ul li:first-child, .h-history-policy ul li:last-child, .h-history-policy ul li {
+		display: block;
+		padding: 0;
+		border: none;
+	}
+	.h-history-policy ul li a {
+		display: block;
+		padding: 10px;
+		color: #000;
+	}
+	.h-login-register a {
+		margin-top: 6px;
+	}
+	.navbar-toggle {
+		float: left;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #ffffff;
+	}
+	.navbar-default .navbar-toggle {
+		border: none;
+		border-radius: 0;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		-ms-border-radius: 0;
+		-o-border-radius: 0;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: transparent;
+	}
+	/* Header End */
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 0;
+	}
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 15px 30px;
+	}
+	.emergency-services {
+		padding: 0 15px;
+	}
+	.emergency-services .emergency-detail [class*=col-] {
+		margin-top: 35px;
+	}
+	.emergency-services .emergency-detail .service-block .image-icon img {
+		width: 50px;
+		height: auto;
+	}
+	.emergency-services .emergency-detail .service-block {
+		padding: 0;
+	}
+	.emergency-services .emergency-detail .service-block .image-icon {
+		position: relative;
+		left: auto;
+		top: auto;
+		padding: 0 0 10px;
+	}
+	.emergency-services .main-service-block {
+		float: left;
+		display: block;
+		vertical-align: unset;
+	}
+	.who-we-are .section-title h3 {
+		margin-top: 0;
+	}
+	.panel-heading .accordion-toggle {
+		padding: 12px 35px 11px 20px;
+	}
+	.services-section .services-box {
+		padding: 0 20px;
+	}
+	.services-section .services-box .grid-box-inner a .item-title .icon-wrp img {
+		width: 45px;
+		height: auto;
+	}
+	.who-we-are {
+		padding: 30px 0;
+	}
+	.our-work-profile {
+		padding: 30px 0;
+	}
+	.plastic-surgery .emergency-detail {
+		padding: 35px 15px;
+	}
+	.medical-health-news {
+		padding: 70px 0;
+	}
+	.map-address-location .right-side a.address-block .block-detail {
+		margin-right: -50%;
+	}
+	.map-address-location iframe {
+		height: 500px;
+	}
+	.our-work-profile .treatment-block h5 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.services-section {
+		margin: 0;
+	}
+	.services-section .services-box {
+		width: 50%;
+	}
+	.our-health-mission [class*=col-] {
+		min-height: auto;
+	}
+	.health-services .health-block h5 {
+		font-size: 26px;
+		line-height: 35px;
+	}
+	.health-services .health-block ul li {
+		margin: 0 0 15px;
+	}
+	.health-services .health-block {
+		padding: 0 0 30px;
+	}
+	.medical-health-news .medical-health-blocks .block-desc {
+		padding: 20px 0 35px;
+	}
+	.who-we-are .our-health-mission .health-block {
+		padding: 35px 0 0;
+	}
+	.section-title, .health-services .section-title {
+		padding: 0 0 25px;
+	}
+	.services-section {
+		margin: 0;
+	}
+	.services-section .services-box {
+		width: 100%;
+	}
+	.who-we-are .our-health-mission .image img {
+		height: auto;
+	}
+	.work-profile-tabing .tab-pane {
+		padding: 25px;
+	}
+	.work-profile-tabing .nav-tabs>li.active>a, .work-profile-tabing .nav-tabs>li.active>a:hover, .work-profile-tabing .nav-tabs>li.active>a:focus {
+		border-right: 1px solid #ddd;
+	}
+	.work-profile-tabing .tab-pane h4 {
+		font-size: 25px;
+	}
+	/* Home Page End */
+	/* Service Page Start */
+	.content {
+		padding: 0 0 40px;
+	}
+	.human-body-parts .body-parts-block {
+		padding: 20px;
+	}
+	.human-body-parts .body-parts-block .icon {
+		padding: 0 0 15px;
+	}
+	.human-body-parts .body-parts-block .icon i:before {
+		font-size: 60px;
+	}
+	.appointment-form {
+		padding: 30px 20px;
+	}
+	.appointment-form a.appointment-button {
+		margin-top: 20px;
+	}
+	.service-detail-block .service-detail-partitions {
+		padding: 0;
+	}
+	.service-detail-block {
+		padding: 17px 20px 30px;
+	}
+	.banner .banner-desc {
+		padding: 0 20px;
+	}
+	.banner h4 {
+		font-size: 23px;
+		line-height: 28px;
+	}
+	/* Service Page End */
+	/* Blog Page Start */
+	.blog-lists .blog-post .blog-image .emp-detail {
+		padding: 0 20px 30px;
+	}
+	.blog-sidebar-widget .recent-posts .post-block img {
+		height: 150px;
+	}
+	.blog-sidebar-widget .search-box .form-control {
+		padding-right: 50px;
+	}
+	.blog-sidebar-widget .widget-detail ul li a {
+		line-height: 20px;
+	}
+	.blog-sidebar-widget .widget-detail {
+		padding: 0 0 25px;
+	}
+	/* Blog Page End */
+	/* Blog Single Page Start */
+	.blog-single-pg .blog-lists .blog-post .blog-detail {
+		padding: 20px;
+	}
+	.blog-single-pg .blog-lists .blog-post .blog-detail h1 {
+		font-size: 25px;
+		line-height: 30px;
+		margin: 0 0 25px;
+	}
+	.blog-single-pg .blog-lists .blog-post .blog-social-icons {
+		padding: 0 0 20px;
+	}
+	.blog-single-pg .blog-lists .blog-post .blog-detail p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	/* Blog Single Page End */
+	/* Doctor Page Start */
+	.banner {
+		overflow: hidden;
+	}
+	.clinic-staff-carousel .slick-prev {
+		left: -10px;
+	}
+	.clinic-staff-carousel .slick-next {
+		right: -10px;
+	}
+	.clinic-staff-carousel .slick-slide {
+		margin: 0 20px;
+	}
+	.doctor-clinic-staff {
+		padding: 40px 0;
+	}
+	.nurse-practice {
+		padding: 40px 0;
+	}
+	.medlife-clinic-num .counter {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.inner-banner h1 {
+		font-size: 40px;
+		line-height: 45px;
+		margin: 0 0 10px;
+	}
+	.phisician-md .phisician-right .silver-squar {
+		/*margin-top: -320px; min-height: 425px; margin-left: -120px;*/
+		display: none;
+	}
+	.phisician-md .phisician-right {
+		padding-top: 0;
+		margin: 0;
+	}
+	.phisician-md .phisician-right .join-our-team {
+		padding-top: 0px;
+	}
+	.phisician-md .phisician-left {
+		margin: 40px 0 0;
+		padding: 0 30px 0 0;
+	}
+	.phisician-md {
+		padding: 0 0 35px;
+		;
+	}
+	.scroll-to-section {
+		margin-top: -32px;
+	}
+	.scroll-to-section a {
+		height: 45px;
+		width: 45px;
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.phisician-md {
+		margin: 0;
+	}
+	.medlife-clinic-num h6 {
+		margin: 10px 0 0;
+	}
+	.nurse-practice [class*=col-] {
+		margin-bottom: 15px;
+	}
+	.medlife-clinic-num img {
+		width: 60px;
+	}
+	.phisician-md .phisician-left h5 {
+		font-size: 22px;
+		line-height: 28px;
+		margin: 0 0 15px;
+	}
+	.medlife-clinic-num .medlife-clinic-block {
+		padding: 0 0 20px;
+	}
+	.nurse-practice .nurse-detail {
+		padding: 20px;
+	}
+	.medlife-clinic-num h6 {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.nurse-practice .nurse-detail p {
+		line-height: 25px;
+	}
+	.phisician-md .phisician-right .join-our-team {
+		text-align: center;
+	}
+	/* Doctor Page End */
+	/* Shop Page Start */
+	.shop-pg .section-title {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.shop-pg .section-title h1 {
+		font-size: 28px;
+		line-height: 33px;
+	}
+	.shop-products-list .product-block a .product-detail h6 {
+		margin: 0 0 15px;
+	}
+	.shop-products-list .product-block a .product-detail {
+		padding: 15px 15px 60px;
+	}
+	.pagination>li:first-child a, .pagination>li:first-child span {
+		margin-right: 25px;
+	}
+	.pagination>li:last-child a, .pagination>li:last-child span {
+		margin-left: 25px;
+	}
+	/* Shop Page End */
+	/* Shop Product Page Start */
+	.shop-product-pg .product-items-detail .right-side {
+		padding: 25px;
+	}
+	.shop-product-pg .product-items-detail .product-use {
+		padding: 20px 0;
+	}
+	.shop-product-pg .product-related-desc .description, .shop-product-pg .related-products {
+		padding: 40px 0;
+	}
+	.shop-products-list .product-block a .product-detail {
+		padding: 25px 20px 60px;
+	}
+	.shop-product-pg .product-items-detail h4 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	/* Shop Product Page End */
+	/* Shop Cart Page Start */
+	.shop-cart-pg .cart-collaterals .cart-totals {
+		padding: 20px;
+	}
+	.shop-cart-pg .cart-collaterals .cart-totals .proceed-to-checkout a.btn-default {
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.shop-cart-pg .cart-error-msg {
+		text-align: center;
+	}
+	.shop-cart-pg .return-shop-btn {
+		text-align: center;
+	}
+	/* Shop Cart Page End */
+	/* Contact Page Start */
+	.blog-sidebar-widget .widget-title {
+		padding: 0 0 15px;
+	}
+	.contact-pg .banner .banner-desc {
+		padding: 0;
+	}
+	.contact-pg .sidebar-widget {
+		margin-top: 20px;
+	}
+	.contact-pg .content-desc .appointment-form {
+		padding: 20px 15px;
+	}
+	.contact-pg .content-desc {
+		margin: 0;
+	}
+	.appointment-form p {
+		margin: 0 0 20px;
+	}
+	.contact-pg .banner .banner-desc h1 {
+		font-size: 28px;
+		line-height: 35px;
+	}
+	// .appointment-form .select-box label { z-index: 0; }
+	.appointment-form .form-group label {
+		position: relative;
+		left: auto;
+		top: auto;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		z-index: 0;
+	}
+	.form-group.is-val label {
+		top: auto;
+	}
+	.appointment-form .form-control {
+		height: 30px;
+		padding: 10px;
+	}
+	/* Contact Page End */
+	/* Time Table Page Start */
+	.time-table-pg .section-title [class*=col-] {
+		width: auto;
+	}
+	.timetable-appointment {
+		padding: 30px 0;
+	}
+	/* Time Table Page End */
+	/* Footer Start */
+	.footer {
+		padding: 30px 0;
+	}
+	.footer .f-top {
+		padding: 0;
+	}
+	.footer .f-widget h6 {
+		margin: 0 0 20px;
+	}
+	.footer .f-widget ul li, .footer .f-widget ul li a {
+		line-height: 30px;
+	}
+	.footer .f-widget [class*=col-] {
+		padding-bottom: 30px;
+	}
+	.footer .f-widget .pages-block [class*=col-] {
+		padding-bottom: 0;
+	}
+	/* Footer End */
+	.breadcrumb-title .breadcrumb-right h5 {
+		text-align: left;
+	}
+	.breadcrumb-title {
+		padding: 15px 0;
+	}
+}
+@media (min-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+	/* Header Start */
+	// .navbar-header { width: 100%; text-align: center; background-color: #ffffff; position: relative; z-index: 99; }
+	.h-bottom .navbar .navbar-brand {
+		float: none;
+		display: inline-block;
+	}
+	// .h-bottom .navbar .background { left: 0; width: 100%; }
+	// .h-bottom .cart-right { text-align: center; width: 100%; }
+	.h-top .h-left {
+		float: left;
+		display: inline-block;
+	}
+	.h-history-policy {
+		padding-right: 15px;
+	}
+	.h-history-policy ul {
+		display: none;
+		background-color: #000;
+		position: absolute;
+		left: auto;
+		right: 0;
+		top: 22px;
+		bottom: auto;
+		min-width: 150px;
+		z-index: 999;
+	}
+	.h-history-policy ul.open {
+		display: block;
+	}
+	.h-history-policy ul li:first-child, .h-history-policy ul li:last-child, .h-history-policy ul li {
+		display: block;
+		padding: 0;
+		border: none;
+	}
+	.h-history-policy ul li a {
+		display: block;
+		padding: 10px;
+	}
+	.h-bottom .navbar .background {
+		left: 0;
+	}
+	.navbar-header {
+		position: relative;
+		z-index: 9;
+		float: none;
+		text-align: center;
+	}
+	.h-bottom .navbar .navbar-collapse {
+		padding-left: 15px;
+		width: 100%;
+		text-align: center;
+	}
+	.navbar-nav {
+		float: none;
+	}
+	.navbar-nav>li {
+		float: none;
+		display: inline-block;
+	}
+	.h-bottom {
+		background-color: #37a8ec;
+	}
+	.h-bottom .cart-right {
+		float: none;
+		text-align: center;
+	}
+	/* Header End */
+	/* Rev Slider Start */
+	.main-slider {
+		margin-top: 206px;
+	}
+	/* Rev Slider End */
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 0;
+	}
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 30px;
+	}
+	.emergency-services .emergency-detail [class*=col-] {
+		margin-top: 35px;
+	}
+	.emergency-services .emergency-detail .service-block .image-icon img {
+		width: 50px;
+		height: auto;
+	}
+	.emergency-services .emergency-detail .service-block {
+		padding-left: 65px;
+	}
+	.emergency-services .main-service-block {
+		float: left;
+		width: 100%;
+		display: block;
+		vertical-align: unset;
+	}
+	.who-we-are .section-title h3 {
+		margin-top: 0;
+	}
+	.panel-heading .accordion-toggle {
+		padding: 12px 35px 11px 20px;
+	}
+	.services-section .services-box {
+		padding: 0 20px;
+	}
+	.services-section .services-box .grid-box-inner a .item-title .icon-wrp img {
+		width: 45px;
+		height: auto;
+	}
+	.who-we-are {
+		padding: 50px 0;
+	}
+	.our-work-profile {
+		padding: 50px 0;
+	}
+	.plastic-surgery .emergency-detail {
+		padding: 35px 15px;
+	}
+	.medical-health-news {
+		padding: 70px 0;
+	}
+	.map-address-location .right-side a.address-block .block-detail {
+		margin-right: -50%;
+	}
+	.map-address-location .right-side a.address-block {
+		height: 250px;
+	}
+	.map-address-location iframe {
+		height: 500px;
+	}
+	.our-work-profile .treatment-block h5 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.services-section {
+		margin: 0;
+	}
+	.services-section .services-box {
+		width: 50%;
+	}
+	.our-health-mission [class*=col-] {
+		min-height: 333px;
+	}
+	.health-services .health-block h5 {
+		line-height: 42px;
+	}
+	.health-services .health-block ul li {
+		margin: 0 0 15px;
+	}
+	.health-services .health-block {
+		padding: 0 0 30px;
+	}
+	.medical-health-news .medical-health-blocks .block-desc {
+		padding: 20px 0 35px;
+	}
+	.our-treatment [class*=col-] {
+		min-height: 210px;
+	}
+	.emergency-services .emergency-detail [class*=col-]:nth-last-child(2) .service-block, .emergency-services .emergency-detail [class*=col-]:last-child .service-block {
+		padding-bottom: 35px;
+	}
+	.services-section {
+		margin: 0;
+	}
+	/* Home Page End */
+	/* Service Page Start */
+	.content .content-desc {
+		padding-bottom: 30px;
+	}
+	.human-body-parts .body-parts-block {
+		margin: 0 0 30px;
+	}
+	.service-detail-block .service-detail-partitions {
+		padding: 0;
+	}
+	.service-detail-block {
+		padding: 17px 40px 40px;
+	}
+	/* Service Page End */
+	/* Blog Page Start */
+	.blog-lists .blog-post .blog-detail {
+		padding-left: 45px;
+	}
+	.blog-lists .blog-post .blog-image .emp-detail {
+		padding: 0 30px 30px;
+	}
+	.blog-sidebar-widget .recent-posts .post-block img {
+		height: 150px;
+	}
+	.blog-sidebar-widget .search-box .form-control {
+		padding-right: 50px;
+	}
+	.blog-sidebar-widget .widget-detail ul li a {
+		line-height: 20px;
+	}
+	.blog-sidebar-widget .widget-detail {
+		padding: 0 0 25px;
+	}
+	/* Blog Page End */
+	/* Blog Single Page Start */
+	.blog-single-pg .blog-lists .blog-post .blog-detail {
+		padding: 40px;
+	}
+	.blog-single-pg .blog-lists .blog-post .blog-detail h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.blog-single-pg .blog-lists .blog-post .blog-social-icons {
+		padding: 10px 0 30px;
+	}
+	/* Blog Single Page End */
+	/* Doctor Page Start */
+	.banner {
+		overflow: hidden;
+	}
+	.clinic-staff-carousel .slick-prev {
+		left: -15px;
+	}
+	.clinic-staff-carousel .slick-next {
+		right: -15px;
+	}
+	.clinic-staff-carousel .slick-slide {
+		margin: 0 20px;
+	}
+	.doctor-clinic-staff {
+		padding: 60px 0;
+	}
+	.nurse-practice {
+		padding: 60px 0;
+	}
+	.medlife-clinic-num .counter {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.inner-banner h1 {
+		font-size: 60px;
+		line-height: 60px;
+		margin: 0 0 20px;
+	}
+	.phisician-md .phisician-right .silver-squar {
+		margin-top: -320px;
+		min-height: 425px;
+		margin-left: -120px;
+	}
+	.phisician-md .phisician-right .join-our-team {
+		padding-top: 45px;
+	}
+	.phisician-md .phisician-left {
+		margin: 40px 0 0;
+		padding: 0 30px 0 0;
+	}
+	.phisician-md {
+		padding: 35px 0 100px;
+	}
+	.scroll-to-section {
+		margin-top: -32px;
+	}
+	.scroll-to-section a {
+		height: 60px;
+		width: 60px;
+	}
+	.phisician-md {
+		margin: 0;
+	}
+	.medlife-clinic-num h6 {
+		margin: 20px 0 0;
+	}
+	.nurse-practice [class*=col-] {
+		margin-bottom: 15px;
+	}
+	.medlife-clinic-num img {
+		width: 60px;
+	}
+	.phisician-md .phisician-left h5 {
+		line-height: 28px;
+	}
+	/* Doctor Page End */
+	/* Shop Page Start */
+	.shop-pg .section-title {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.shop-pg .section-title h1 {
+		font-size: 32px;
+		line-height: 32px;
+	}
+	.shop-products-list [class*=col-] {
+		min-height: 610px;
+	}
+	.shop-products-list .product-block a .product-detail h6 {
+		margin: 0 0 15px;
+	}
+	.shop-products-list .product-block a .product-detail {
+		padding: 20px 30px 60px;
+	}
+	/* Shop Page End */
+	/* Shop Product Page Start */
+	.shop-product-pg .product-items-detail .right-side {
+		padding-top: 25px;
+		padding-left: 30px;
+	}
+	.shop-product-pg .product-items-detail .product-use {
+		padding: 20px 0;
+	}
+	.shop-product-pg .product-related-desc .description, .shop-product-pg .related-products {
+		padding: 60px 0;
+	}
+	.shop-products-list .product-block a .product-detail {
+		padding: 25px 20px 60px;
+	}
+	.shop-product-pg .shop-products-list [class*=col-] {
+		min-height: 580px;
+	}
+	/* Shop Product Page End */
+	/* Contact Page Start */
+	.contact-pg .banner .banner-desc {
+		padding: 0;
+	}
+	.content {
+		padding: 200px 0 40px;
+	}
+	.contact-pg .sidebar-widget {
+		margin-top: 20px;
+	}
+	.contact-pg .content-desc .appointment-form {
+		padding: 40px;
+	}
+	.contact-pg .content-desc {
+		margin: 0;
+		padding-bottom: 0;
+	}
+	/* Contact Page End */
+	/* Time Table Page Start */
+	.time-table-pg {
+		padding: 258px 0 40px;
+	}
+	.timetable-appointment {
+		padding: 50px 0;
+	}
+	/* Time Table Page End */
+	/* Footer Start */
+	.footer {
+		padding: 50px 0;
+	}
+	.footer .f-top {
+		padding: 0;
+	}
+	.footer .f-widget h6 {
+		margin: 0 0 20px;
+	}
+	.footer .f-widget ul li, .footer .f-widget ul li a {
+		line-height: 30px;
+	}
+	.footer .f-widget [class*=col-] {
+		padding-bottom: 30px;
+	}
+	.footer .f-widget .pages-block [class*=col-] {
+		padding-bottom: 0;
+	}
+	/* Footer End */
+}
+@media (min-width: 795px) and (max-width: 991px) {
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 165px;
+	}
+	.services-section {
+		margin: -16px 0 0;
+	}
+	/* Home Page End */
+}
+@media (max-width: 991px) {
+	.navbar-nav>li.active a:before, .navbar-nav>li:hover a:before {
+		display: none !important;
+	}
+	.navbar-nav>li a:before {
+		display: none !important;
+	}
+}
+@media (min-width: 992px) {
+	.navbar-collapse {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-default ul.nav li.dropdown:hover>ul.dropdown-menu {
+		display: block;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	/* Header Start */
+	.h-top .h-left {
+		float: left;
+		display: inline-block;
+	}
+	.h-history-policy {
+		padding-right: 15px;
+	}
+	.h-history-policy ul {
+		display: none;
+		background-color: #000;
+		position: absolute;
+		left: auto;
+		right: 0;
+		top: 22px;
+		bottom: auto;
+		min-width: 150px;
+		z-index: 999;
+	}
+	.h-history-policy ul.open {
+		display: block;
+	}
+	.h-history-policy ul li:first-child, .h-history-policy ul li:last-child, .h-history-policy ul li {
+		display: block;
+		padding: 0;
+		border: none;
+	}
+	.h-history-policy ul li a {
+		display: block;
+		padding: 10px;
+	}
+	/* Header End */
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 92px;
+	}
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 30px;
+	}
+	.emergency-services .emergency-detail [class*=col-] {
+		margin-top: 35px;
+	}
+	.emergency-services .emergency-detail .service-block .image-icon img {
+		width: 50px;
+		height: auto;
+	}
+	.emergency-services .emergency-detail .service-block {
+		padding-left: 65px;
+	}
+	.emergency-services .main-service-block {
+		float: left;
+		display: block;
+		vertical-align: unset;
+	}
+	.who-we-are .section-title h3 {
+		margin-top: 0;
+	}
+	.panel-heading .accordion-toggle {
+		padding: 12px 35px 11px 20px;
+	}
+	.services-section .services-box {
+		padding: 0 20px;
+	}
+	.services-section .services-box .grid-box-inner a .item-title .icon-wrp img {
+		width: 45px;
+		height: auto;
+	}
+	.who-we-are {
+		padding: 50px 0;
+	}
+	.our-work-profile {
+		padding: 70px 0;
+	}
+	.plastic-surgery .emergency-detail {
+		padding: 35px 15px;
+	}
+	.medical-health-news {
+		padding: 100px 0;
+	}
+	.map-address-location .right-side a.address-block .block-detail {
+		margin-right: -50%;
+	}
+	.map-address-location .right-side a.address-block {
+		height: 280px;
+	}
+	.map-address-location iframe {
+		height: 560px;
+	}
+	.our-work-profile .treatment-block h5 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.emergency-services .emergency-detail [class*=col-]:nth-last-child(2) .service-block, .emergency-services .emergency-detail [class*=col-]:last-child .service-block {
+		padding-bottom: 35px;
+	}
+	.services-section {
+		margin: -88px 0 0 0;
+	}
+	/* Home Page End */
+	/* Service Page Start */
+	.content {
+		padding: 149px 0 40px;
+	}
+	.service-detail-block {
+		padding: 17px 40px 40px;
+	}
+	/* Service Page End */
+	/* Blog Page Start */
+	.blog-lists .blog-post .blog-detail {
+		padding-left: 45px;
+	}
+	.blog-lists .blog-post .blog-image .emp-detail {
+		padding: 0 30px 30px;
+	}
+	/* Blog Page End */
+	/* Blog Single Page Start */
+	.blog-single-pg .blog-lists .blog-post .blog-detail {
+		padding: 40px;
+	}
+	.blog-single-pg .blog-lists .blog-post .blog-detail h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.blog-single-pg .blog-lists .blog-post .blog-social-icons {
+		padding: 20px 0 40px;
+	}
+	/* Blog Single Page End */
+	/* Doctor Page Start */
+	.banner {
+		overflow: hidden;
+	}
+	.clinic-staff-carousel .slick-prev {
+		left: -15px;
+	}
+	.clinic-staff-carousel .slick-next {
+		right: -15px;
+	}
+	.clinic-staff-carousel .slick-slide {
+		margin: 0 20px;
+	}
+	.doctor-clinic-staff {
+		padding: 60px 0;
+	}
+	.nurse-practice {
+		padding: 60px 0;
+	}
+	.medlife-clinic-num .counter {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	.inner-banner h1 {
+		font-size: 65px;
+		line-height: 65px;
+		margin: 0 0 20px;
+	}
+	.phisician-md .phisician-right .silver-squar {
+		margin-top: -415px;
+		min-height: 475px;
+	}
+	.phisician-md .phisician-right .join-our-team {
+		padding-top: 45px;
+	}
+	/* Doctor Page End */
+	/* Shop Page Start */
+	.shop-products-list [class*=col-] {
+		min-height: 590px;
+	}
+	.shop-products-list .product-block a .product-detail h6 {
+		margin: 0 0 20px;
+	}
+	/* Shop Page End */
+	/* Shop Product Page Start */
+	.shop-product-pg .product-items-detail .right-side {
+		padding-top: 25px;
+		padding-left: 30px;
+	}
+	.shop-product-pg .product-items-detail .product-use {
+		padding: 20px 0;
+	}
+	.shop-product-pg .product-related-desc .description, .shop-product-pg .related-products {
+		padding: 60px 0;
+	}
+	.shop-products-list .product-block a .product-detail {
+		padding: 25px 20px 60px;
+	}
+	.shop-product-pg .shop-products-list [class*=col-] {
+		min-height: 500px;
+	}
+	/* Shop Product Page End */
+	/* Contact Page Start */
+	.contact-pg .banner .banner-desc {
+		padding: 0 5px;
+	}
+	.contact-pg .sidebar-widget {
+		margin-top: -125px;
+	}
+	/* Contact Page End */
+	/* Time Table Page Start */
+	.time-table-pg {
+		padding: 209px 0 0;
+	}
+	.timetable-appointment {
+		padding: 60px 0;
+	}
+	/* Time Table Page End */
+	/* Footer Start */
+	.footer {
+		padding: 70px 0;
+	}
+	/* Footer End */
+}
+@media (min-width: 1200px) and (max-width: 1820px) {}
+@media (min-width: 1200px) and (max-width: 1239px) {
+	.container {
+		width: 1170px;
+	}
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 29px;
+	}
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 30px;
+	}
+	.emergency-services .emergency-detail [class*=col-] {
+		min-height: 178px;
+	}
+	.emergency-services .emergency-detail .service-block .image-icon img {
+		width: 50px;
+		height: auto;
+	}
+	.emergency-services .emergency-detail .service-block {
+		padding-left: 65px;
+	}
+	.services-section {
+		margin: -152px 0 0 0;
+	}
+	/* Home Page End */
+	/* Doctor Page Start */
+	.clinic-staff-carousel .slick-prev {
+		left: -15px;
+	}
+	.clinic-staff-carousel .slick-next {
+		right: -15px;
+	}
+	.clinic-staff-carousel .slick-slide {
+		margin: 0 20px;
+	}
+	.banner {
+		overflow: hidden;
+	}
+	.phisician-md .phisician-left {
+		margin: 125px 0 0;
+	}
+	/* Doctor Page End */
+	/* Contact Page Start */
+	.contact-pg .banner .banner-desc {
+		padding: 0 10px;
+	}
+	/* Contact Page End */
+	/* Timetable Page Start */
+	.timetable-appointment {
+		padding: 80px 0;
+	}
+	/* Timetable Page End */
+}
+@media (min-width: 1240px) and (max-width: 1299px) {
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 14px;
+	}
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 30px;
+	}
+	.emergency-services .emergency-detail [class*=col-] {
+		min-height: 178px;
+	}
+	.emergency-services .emergency-detail .service-block .image-icon img {
+		width: 50px;
+		height: auto;
+	}
+	.emergency-services .emergency-detail .service-block {
+		padding-left: 65px;
+	}
+	.services-section {
+		margin: -165px 0 0 0;
+	}
+	/* Home Page End */
+	/* Doctor Page Start */
+	.clinic-staff-carousel .slick-prev {
+		left: -15px;
+	}
+	.clinic-staff-carousel .slick-next {
+		right: -15px;
+	}
+	.clinic-staff-carousel .slick-slide {
+		margin: 0 20px;
+	}
+	.banner {
+		overflow: hidden;
+	}
+	.phisician-md .phisician-left {
+		margin: 125px 0 0;
+	}
+	/* Doctor Page End */
+	/* Contact Page Start */
+	.contact-pg .banner .banner-desc {
+		padding: 0 10px;
+	}
+	/* Contact Page End */
+}
+@media (min-width: 1300px) and (max-width: 1399px) {
+	/* Home Page Start */
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 50px;
+	}
+	.emergency-services .emergency-detail [class*=col-] {
+		min-height: 178px;
+	}
+	.tp-mask-wrap {
+		margin-top: 7px;
+	}
+	.services-section {
+		margin: -172px 0 0 0;
+	}
+	/* Home Page End */
+}
+@media (min-width: 1400px) and (max-width: 1499px) {
+	/* Home Page Start */
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 50px;
+	}
+	.tp-mask-wrap {
+		margin-top: 7px;
+	}
+	.services-section {
+		margin: -172px 0 0 0;
+	}
+	/* Home Page End */
+}
+@media (min-width: 1500px) and (max-width: 1599px) {
+	/* Home Page Start */
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 75px;
+	}
+	.tp-mask-wrap {
+		margin-top: 7px;
+	}
+	.services-section {
+		margin: -172px 0 0 0;
+	}
+	/* Home Page End */
+}
+@media (min-width: 1600px) and (max-width: 1699px) {
+	/* Home Page Start */
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.emergency-services .emergency-detail {
+		padding: 0 100px;
+	}
+	.tp-mask-wrap {
+		margin-top: 7px;
+	}
+	.services-section {
+		margin: -172px 0 0 0;
+	}
+	/* Home Page End */
+}
+@media (min-width: 1700px) and (max-width: 1760px) {
+	/* Home Page Start */
+	.emergency-services .emergency-detail .service-block h6 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+	}
+	.services-section {
+		margin: -172px 0 0 0;
+	}
+	/* Home Page End */
+}
+@media (min-width: 1700px) and (max-width: 1799px) {
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 7px;
+	}
+	.services-section {
+		margin: -172px 0 0 0;
+	}
+	/* Home Page End */
+}
+@media (min-width: 1800px) and (max-width: 1919px) {
+	/* Home Page Start */
+	.tp-mask-wrap {
+		margin-top: 7px;
+	}
+	.services-section {
+		margin: -172px 0 0 0;
+	}
+	/* Home Page End */
+}
+/*---------- Large Desktop , Large Screen End ----------*/
